@@ -1,0 +1,58 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+
+ol,ul,li{list-style: none;}
+.hNavi{background-color:rgb(56, 123, 247); width: 100%;}
+.hNavi > ul{display: flex; width: 1300px; margin: 0 auto;}
+.hNavi a{
+  text-decoration: none; color: #333; font-size: 16px;
+  background-color: rgb(56, 123, 247); display: inline-block;
+  width: 100px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  transition: 0.3s;
+}
+.hNavi a:hover{background-color: #fff; color: rgb(56, 123, 247);}
+body{
+  font-family: '맑은 고딕', arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+main{width: 1300px; margin: 0 auto;}
+h1{padding: 10px 0px; width: 1300px; margin: 0 auto;}
+h2{color: #333;line-height: 60px;}
+
+
+.data_list{
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+.data_list caption{
+  line-height: 50px;
+}
+.data_list th, .data_list td{
+  border: 1px solid #ccc;
+  line-height: 40px;
+  text-align: center;
+}
+.data_list th{background-color: #555555; color: #fff;}
+.data_list .btn button{
+  border: none;
+  background: rgb(252, 75, 75);
+  color: #fff;
+  border-radius: 0;
+  padding:4px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.data_list .btn button:first-child{
+  background: #006eff;
+}
+button{cursor: pointer;}
+button:disabled{
+  opacity: 60%;
+  color: #757575 !important;
+  cursor: default !important;
+}
