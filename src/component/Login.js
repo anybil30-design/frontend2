@@ -25,7 +25,7 @@ const Login = () => {
   const handleSubmit=async(e)=>{
     e.preventDefault();
     try{
-      const res = await axios.post('http://localhost:9070/login',form);
+      const res = await axios.post('https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/login',form);
       localStorage.setItem('token', res.data.token);
       alert('로그인 성공');
     }catch(err){// 실패시
@@ -78,5 +78,6 @@ const Login = () => {
     </>
   );
 };
+
 
 export default Login;
