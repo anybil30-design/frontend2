@@ -6,7 +6,7 @@ export default function Button({t_name, i_code, loadData}){
   const navigate = useNavigate();
   const deleteData = (t_name, i_code) =>{
     if(window.confirm('정말 삭제하시겠습니까?')){
-    axios.delete(`http://localhost:9070/${t_name}/${i_code}`)
+    axios.delete(`https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/${t_name}/${i_code}`)
     .then(()=>{
       alert('데이터가 성공적으로 삭제되었습니다.');
       // loadData(); //데이터 삭제가 이루어지면 목록 다시 갱신해야함.
@@ -22,4 +22,5 @@ export default function Button({t_name, i_code, loadData}){
       <button onClick={()=>deleteData(t_name, i_code)}>삭제</button>
     </td>
   );
+
 }
