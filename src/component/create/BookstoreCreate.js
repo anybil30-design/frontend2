@@ -26,7 +26,7 @@ export default function BookstoreCreate(props){
   // 신규상품 등록하기 버튼 클릭시 내용 백엔드로 주소 전송하기
   const handleSubmit=(e)=>{
     e.preventDefault();
-    axios.post("http://localhost:9070/bookstore/update", form)
+    axios.post("https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/bookstore/update", form)
     .then(()=>{
       alert('상품이 등록 완료되었습니다.');
       navigate('/bookstore'); // 처음 목록 페이지로 이동
@@ -112,4 +112,5 @@ export default function BookstoreCreate(props){
       </form>
     </>
   );
+
 };
