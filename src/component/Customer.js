@@ -10,7 +10,7 @@ const Customer = () => {
 
   const getData=async()=>{
     try{
-      const { data } = await axios.get('http://localhost:9070/customer');
+      const { data } = await axios.get('https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/customer');
       setCustomer(data);
     }catch(err){
       console.error(err);
@@ -53,5 +53,6 @@ const Customer = () => {
     </>
   );
 };
+
 
 export default Customer;
