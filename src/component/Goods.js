@@ -23,7 +23,7 @@ export default function Goods(props){
 
   // 1. 상품 리스트 조회(출력)
   const loadData=()=>{
-    axios.get('http://localhost:9070/goods')
+    axios.get('https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/goods')
     // 성공시 데이터를 저장
     .then((res)=>{
       setData(res.data);
@@ -40,7 +40,7 @@ export default function Goods(props){
   const deleteData=(g_code)=>{  //매개변수로 g_code값을 받는다.
     if(window.confirm('정말 삭제하시겠습니까?')){
       axios //서버에 delete 요청을 전송
-      .delete(`http://localhost:9070/goods/${g_code}`)
+      .delete(`https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/goods/${g_code}`)
       //성공일때 아래 내용을 실행함.
       .then(()=>{
         alert('데이터가 성공적으로 삭제되었습니다.');
@@ -150,4 +150,5 @@ export default function Goods(props){
       </div>
     </>
   );
+
 };
