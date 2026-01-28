@@ -43,7 +43,7 @@ export default function BookstoreUpdate(props){
   const handleSubmit =(e)=>{
     e.preventDefault();
     //비동기 방식으로 업데이트할 내용을 백엔드로 전달
-    axios.put(`http://localhost:9070/bookstore/${i_code}`,form)
+    axios.put(`https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/bookstore/${i_code}`,form)
     .then(()=>{
       alert('수정이 완료되었습니다.');
       navigate('/bookstore');
@@ -137,3 +137,4 @@ export default function BookstoreUpdate(props){
   );
 
 };
+
