@@ -17,7 +17,7 @@ export default function FruitsUpdate(props){
 
   const getInfo=async()=>{
     try{
-      const { data } = await axios.get(`http://localhost:9070/fruits/${i_code}`);
+      const { data } = await axios.get(`https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/fruits/${i_code}`);
       
       // 하나의 데이터만 조회하는거기 때문에 하나의 배열만 가져옴
       const row = Array.isArray(data) ? data[0] : data;
@@ -103,4 +103,5 @@ export default function FruitsUpdate(props){
       </section>
     </>  
   );
+
 };
