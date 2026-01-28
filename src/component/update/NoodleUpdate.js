@@ -18,7 +18,7 @@ export default function NoodleUpdate(props){
   useEffect(()=>{
     const getBaseData=async()=>{
       try{
-        const {data} = await axios.get(`http://localhost:9070/noodle/${i_code}`);
+        const {data} = await axios.get(`https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/noodle/${i_code}`);
         setForm(prev=>({
           ...prev,
           ...data
@@ -86,4 +86,5 @@ export default function NoodleUpdate(props){
       </form>
     </>
   );
+
 };
