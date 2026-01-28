@@ -24,7 +24,7 @@ export default function FruitsCreate(props){
   // 저장된 값을 서버로 보내야함.
   const handleSubmit=(e)=>{
     e.preventDefault();
-    axios.post('http://localhost:9070/fruits',form)
+    axios.post('https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/fruits',form)
     .then(()=>{//통신이 성공적으로 이루어지면)
       alert('상품이 정상적으로 등록 완료되었습니다.');
       
@@ -70,4 +70,5 @@ export default function FruitsCreate(props){
       </section>
     </>
   );
+
 };
