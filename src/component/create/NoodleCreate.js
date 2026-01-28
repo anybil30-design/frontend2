@@ -28,7 +28,7 @@ const NoodleCreate = () => {
       e_date: form.e_date.replace(/-/g, ""), // 전송시에만 20260114
     };
 
-    axios.post('http://localhost:9070/noodle/create',payload)
+    axios.post('https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/noodle/create',payload)
     .then(()=>{
       alert('등록에 성공했습니다.');
       navigate('/noodle');
@@ -70,5 +70,6 @@ const NoodleCreate = () => {
     </>
   );
 };
+
 
 export default NoodleCreate;
