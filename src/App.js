@@ -52,9 +52,9 @@ function AppContent() {
       }
     }
 
-    axios.get('http://localhost:9070/goods')
+    axios.get('https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/goods')
       .then(res => setGoodsCount(res.data.length));
-    axios.get('http://localhost:9070/fruits')
+    axios.get('https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/fruits')
       .then(res => setFruitsCount(res.data.length));
     loadData();
   }, [])
