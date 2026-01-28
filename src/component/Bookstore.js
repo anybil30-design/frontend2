@@ -56,7 +56,7 @@ const Bookstore = () => {
 
   const loadData = async() =>{
     try{
-      const { data } = await axios.get('http://localhost:9070/bookstore');
+      const { data } = await axios.get('https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/bookstore');
       setBookstore(data);
     }catch(err){
       console.error(err);
@@ -167,5 +167,6 @@ const Bookstore = () => {
     </>
   );
 };
+
 
 export default Bookstore;
