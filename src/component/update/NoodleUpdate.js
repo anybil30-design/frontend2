@@ -40,7 +40,7 @@ export default function NoodleUpdate(props){
 
   const dataInput=(e)=>{
     e.preventDefault();
-    axios.put(`http://localhost:9070/noodle/update/${i_code}`,form)
+    axios.put(`https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/noodle/update/${i_code}`,form)
     .then(()=>{
       alert('수정이 완료되었습니다.');
       navigate('/noodle');
@@ -88,3 +88,4 @@ export default function NoodleUpdate(props){
   );
 
 };
+
