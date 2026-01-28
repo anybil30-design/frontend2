@@ -29,7 +29,7 @@ const Qusetion = () => {
       return alert('개인정보처리방침에 동의해주세요.');
     }
     try{
-      const {data} = await axios.post('http://localhost:9070/api/question', formData);
+      const {data} = await axios.post('https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/api/question', formData);
       if(data.success){
         
         alert('등록 성공');
@@ -90,5 +90,6 @@ const Qusetion = () => {
     </>
   );
 };
+
 
 export default Qusetion;
