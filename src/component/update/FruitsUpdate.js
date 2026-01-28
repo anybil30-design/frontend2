@@ -52,7 +52,7 @@ export default function FruitsUpdate(props){
   const handleSubmit=(e)=>{
     e.preventDefault();
     
-    axios.put(`http://localhost:9070/fruits/${i_code}`,{
+    axios.put(`https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/fruits/${i_code}`,{
       name:form.name,
       price:form.price,
       color:form.color,
@@ -105,3 +105,4 @@ export default function FruitsUpdate(props){
   );
 
 };
+
