@@ -20,7 +20,7 @@ export default function BookstoreUpdate(props){
     // 비동기방식 get
     const getData=async()=>{
       try{
-        const {data} = await axios.get(`http://localhost:9070/bookstore/${i_code}`);
+        const {data} = await axios.get(`https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/bookstore/${i_code}`);
         setForm((val)=>({
           ...val,
           ...data
@@ -135,4 +135,5 @@ export default function BookstoreUpdate(props){
       </section>
     </>
   );
+
 };
