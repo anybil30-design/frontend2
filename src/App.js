@@ -45,7 +45,7 @@ function AppContent() {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const { data } = await axios.get("http://localhost:9070/getAllData");
+        const { data } = await axios.get("https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/getAllData");
         setUserCount(data.user_count);
       } catch (err) {
         console.error(`db데이터 불러오기 실패: ${err}`);
