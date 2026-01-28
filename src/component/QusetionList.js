@@ -7,7 +7,7 @@ export default function QusetionList(){
   // 데이터 불러오기
   const loadData=async()=>{
     try{
-      const {data} = await axios.get('http://localhost:9070/question');
+      const {data} = await axios.get('https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/question');
       setData(data);
     }catch(err){
       alert(`데이터 가져오기 실패: ${err}`);
@@ -53,4 +53,5 @@ export default function QusetionList(){
       </table>
     </>
   );
+
 };
