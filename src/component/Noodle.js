@@ -14,7 +14,7 @@ const Noodle = () => {
   // 데이터 불러오기
   const getNoodelData=async()=>{
     try{
-      const {data} = await axios.get('http://localhost:9070/noodle');
+      const {data} = await axios.get('https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/noodle');
       setDatas(data);
     }catch(err){
       console.error(err);
@@ -116,5 +116,6 @@ const Noodle = () => {
     </>
   );
 };
+
 
 export default Noodle;
