@@ -78,7 +78,7 @@ const Fruits = () => {
 
   const loadData = async () =>{
     try{
-      const { data } = await axios.get("http://localhost:9070/fruits");
+      const { data } = await axios.get("https://port-0-backend-express-server-mkvweoae71d9732c.sel3.cloudtype.app/fruits");
       setDatas(data);
       setFruitsCount(data.length);
     }catch (err){
@@ -176,5 +176,6 @@ const Fruits = () => {
     </>
   );
 };
+
 
 export default Fruits;
